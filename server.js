@@ -19,6 +19,9 @@ app.get("/products",(req,res)=>{
         }
     })
 });
+app.get("/demo",(req,res)=>{
+    res.json({"message":"Welcome to CI CD Process"});
+})
 app.listen(8080,()=>{
     console.log("server listening the port no.8080");
 });
